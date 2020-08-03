@@ -8,13 +8,14 @@ echo Installing dependencies via pip...
 echo -------------------------------------------------
 echo.
 
+python -m pip install wheel
 python -m pip install cffi
 python -m pip install cloudpickle
 python -m pip install cycler==0.10.0
 python -m pip install dask==0.18.2
 python -m pip install decorator==4.3.0
 python -m pip install image
-python -m pip install imageio==2.3.0
+python -m pip install imageio==2.3.0 --user
 python -m pip install imageio-ffmpeg
 python -m pip install kiwisolver==1.0.1
 python -m pip install matplotlib
@@ -37,7 +38,6 @@ python -m pip install six==1.11.0
 python -m pip install toolz
 python -m pip install torch==1.6.0+cpu torchvision==0.7.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
 python -m pip install tqdm==4.24.0
-python -m pip install wheel
 
 echo.
 echo -------------------------------------------------

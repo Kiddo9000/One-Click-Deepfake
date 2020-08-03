@@ -24,17 +24,16 @@ Using One Click Deepfake is very easy!
    If you are on windows, then run the .bat files.  
    If you are on linux, then run the .sh files.  
       
-   At the end of each script, it will say either CUDA or CPU. Make sure to run the setup correct for your system. If  
-   you do not have a Nvidia GPU, then you need to use the CPU installer. If you do have a Nvidia GPU, then you can  
-   use either, but CUDA is highly reccomended when avaliable.  
+   At the end of each script, it will say either CUDA or CPU. Make sure to run the setup correct for your system. If you do not have a Nvidia GPU, then you need to use the CPU installer. If you do have a Nvidia GPU, then you can use either, but CUDA is highly reccomended when avaliable.  
       
-   If you run the wrong installer or want to use the other mode later on down the line, then do not worry! Simply run  
-   the "Uninstall Torch" script for your system (win/linux) as Torch is the only thing that is hardware specific. After  
-   that you can run the setup for the hardware mode you wish to use.  
+   If you run the wrong installer or want to use the other mode later on down the line, then do not worry! Simply run the "Uninstall Torch" script for your system (win/linux) as Torch is the only thing that is hardware specific. After that you can run the setup for the hardware mode you wish to use.  
       
-   If you want to completly remove any installed dependencies, then run the "Uninstall All Dependencies" script instead.  
-   It is worth noting that the linux setup will install python3 if it is not yet installed, however, it will not remove  
-   it if you run the uninstaller.
+   If you want to completly remove any installed dependencies, then run the "Uninstall All Dependencies" script instead. It is worth noting that the linux setup will install python3 if it is not yet installed, however, it will not remove it if you run the uninstaller.
    
 5. Prepare the deepfake's files.
    (The crucial info for this step is located in the Deepfake Content folder's readme.)  
+   Navigate into the folder called "Deepfake Content". In here is where you store your original image, video and the output.
+   Move the image and the video you want to use into here. The image must be a png file and it needs to be named "original-image.png". Same goes with the video. It must be a mp4 file called "original-video.mp4".
+   
+6. Generate the deepfake.
+   At this point if you have done everything correctly, you are ready to generate your deepfake! Go into the "Scripts" folder once more and this time, run the "Create Deepfake (CUDA/CPU)". Again, make sure you are using the one for your OS (.bat for windows, .sh for linux) and that you are using the correct one for your hardware and the one you used when running the setup script earlier. The entire process is automated. The program will tell you when it's done generating the deepfake. You can find the finished video in the "Deepfake Content" folder as "result.mp4"

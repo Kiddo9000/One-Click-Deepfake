@@ -22,7 +22,7 @@ python -m pip install matplotlib
 python -m pip install moviepy
 python -m pip install networkx==2.1
 python -m pip install numpy
-python -m pip install pandas==0.23.4
+python -m pip install pandas
 python -m pip install Pillow
 python -m pip install pycparser==2.18
 python -m pip install pygit==0.1

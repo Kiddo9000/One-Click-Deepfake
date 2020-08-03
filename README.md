@@ -11,11 +11,11 @@ Using One Click Deepfake is very easy!
 `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`
 
 2. Extract everything to a folder somewhere.  
-   It really doesn't really matter where. However, you may see a performance increase by using it on an SSD instead of a  
-   mechanical drive.
+   (This only applies if you downloaded through the website, not through git or git equivalent.)  
+   It really doesn't really matter where. However, you may see a performance increase by using it on an SSD instead of a mechanical drive.
 
 3. Download and install python.  
-   (Windows only, skip this if you are using linux.)  
+   (Windows only, skip this if you are using linux as the linux setups will do this automatically if python3 is not installed.)  
    You can download Python 3 on their website, here: https://www.python.org/downloads/  
    Download the latest version for windows and install it using the default settings.  
    (You may need to restart for it to work correctly. If you have any issues running the scripts, then try restarting your pc.)

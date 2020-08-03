@@ -24,7 +24,7 @@ Using One Click Deepfake is very easy!
    If you are on windows, then run the .bat files.  
    If you are on linux, then run the .sh files.  
       
-   At the end of each script file's name, it will say either CUDA or CPU. Make sure to run the setup correct for your system. If you do not have a Nvidia GPU, then you need to use the CPU installer. If you do have a Nvidia GPU, then you can use either, but CUDA is highly reccomended when avaliable.  
+   At the end of each script file's name, it will say either CUDA or CPU. Make sure to run the setup correct for your system. If you do not have a Nvidia GPU, then you need to use the CPU installer. If you do have a Nvidia GPU, then you can use either, but CUDA is highly recommended when avaliable.  
       
    If you run the wrong installer or want to use the other mode later on down the line, then do not worry! Simply run the "Uninstall Torch" script for your system (win/linux) as Torch is the only thing that is hardware specific. After that you can run the setup for the hardware mode you wish to use.  
       

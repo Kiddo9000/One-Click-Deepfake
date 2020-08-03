@@ -36,4 +36,12 @@ Using One Click Deepfake is very easy!
    Move the image and the video you want to use into here. The image must be a png file and it needs to be named "original-image.png". Same goes with the video. It must be a mp4 file called "original-video.mp4".
    
 6. Generate the deepfake.
-   At this point if you have done everything correctly, you are ready to generate your deepfake! Go into the "Scripts" folder once more and this time, run the "Create Deepfake (CUDA/CPU)". Again, make sure you are using the one for your OS (.bat for windows, .sh for linux) and that you are using the correct one for your hardware and the one you used when running the setup script earlier. The entire process is automated. The program will tell you when it's done generating the deepfake. You can find the finished video in the "Deepfake Content" folder as "result.mp4"
+   At this point if you have done everything correctly, you are ready to generate your deepfake! Go into the "Scripts" folder once more and this time, run the "Create Deepfake (CUDA/CPU)". Again, make sure you are using the one for your OS (.bat for windows, .sh for linux) and that you are using the correct one for your hardware and the one you used when running the setup script earlier. The entire process is automated. The program will tell you when it's done generating the deepfake. You can find the finished video in the "Deepfake Content" folder as "result.mp4"  
+   
+## Third Party Code/Credits
+This project would have not been possible without the awesome people who made the First Order Motion Model library possible! (And chose to make it open source, too!)  
+This project also relies on code from the awesome people who made the dependencies that this uses.  
+
+First Order Motion Model - Aliaksandr Siaorhin - https://github.com/AliaksandrSiarohin/first-order-model  
+CFFI - Armin Rigo, Maciej Fijalkowski - https://cffi.readthedocs.io/en/latest/  
+Cloudpickle - Cloudpipe - https://github.com/cloudpipe/cloudpickle  

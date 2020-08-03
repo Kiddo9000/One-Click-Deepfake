@@ -18,6 +18,7 @@ echo -------------------------------------------------
 echo 
 
 sudo pip3 install \
+wheel \
 cffi \
 cloudpickle \
 cycler==0.10.0 \
@@ -47,8 +48,7 @@ six==1.11.0 \
 toolz \
 torch \
 torchvision \
-tqdm==4.24.0 \
-wheel
+tqdm==4.24.0
 
 echo 
 echo -------------------------------------------------

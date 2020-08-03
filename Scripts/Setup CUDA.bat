@@ -8,6 +8,7 @@ echo Installing dependencies via pip...
 echo -------------------------------------------------
 echo.
 
+python -m pip install wheel
 python -m pip install cffi
 python -m pip install cloudpickle
 python -m pip install cycler==0.10.0
@@ -37,7 +38,6 @@ python -m pip install six==1.11.0
 python -m pip install toolz
 python -m pip install torch===1.6.0 torchvision===0.7.0 -f https://download.pytorch.org/whl/torch_stable.html
 python -m pip install tqdm==4.24.0
-python -m pip install wheel
 
 echo.
 echo -------------------------------------------------

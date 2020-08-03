@@ -20,7 +20,7 @@ if os.path.isfile('Deepfake Content/original-video.mp4') == False:
     sys.exit(0)
 
 source_image = imageio.imread('Deepfake Content/original-image.png')
-driving_video = imageio.mimread('Deepfake Content/original-video.mp4')
+driving_video = imageio.get_reader('Deepfake Content/original-video.mp4')
 
 print("Preparing the video for processing (This may take a few minutes depending on your video)")
 

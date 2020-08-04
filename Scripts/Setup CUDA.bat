@@ -9,6 +9,7 @@ echo -------------------------------------------------
 echo.
 
 python -m pip install wheel
+python -m pip install Cython
 python -m pip install cffi
 python -m pip install cloudpickle
 python -m pip install cycler==0.10.0

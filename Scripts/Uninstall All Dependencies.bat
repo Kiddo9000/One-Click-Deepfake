@@ -7,36 +7,35 @@ echo Removing Python dependencies...
 echo -------------------------------------------------
 echo.
 
-python -m pip uninstall cffi
-python -m pip uninstall cloudpickle
-python -m pip uninstall cycler
-python -m pip uninstall dask
-python -m pip uninstall decorator
-python -m pip uninstall image
-python -m pip uninstall imageio
-python -m pip uninstall imageio-ffmpeg
-python -m pip uninstall kiwisolver
-python -m pip uninstall matplotlib
-python -m pip uninstall networkx
-python -m pip uninstall numpy
-python -m pip uninstall pandas
-python -m pip uninstall Pillow
-python -m pip uninstall pycparser
-python -m pip uninstall pygit
-python -m pip uninstall pyparsing
-python -m pip uninstall python-dateutil
-python -m pip uninstall pytz
-python -m pip uninstall PyWavelets
-python -m pip uninstall PyYAML
-python -m pip uninstall scikit-image
-python -m pip uninstall scikit-learn
-python -m pip uninstall scipy
-python -m pip uninstall six
-python -m pip uninstall toolz
-python -m pip uninstall torch 
-python -m pip uninstall torchvision
-python -m pip uninstall tqdm
-python -m pip uninstall wheel
+python -m pip uninstall cffi -y
+python -m pip uninstall cloudpickle -y
+python -m pip uninstall cycler -y
+python -m pip uninstall dask -y
+python -m pip uninstall decorator -y
+python -m pip uninstall image -y
+python -m pip uninstall imageio -y
+python -m pip uninstall imageio-ffmpeg -y
+python -m pip uninstall kiwisolver -y
+python -m pip uninstall matplotlib -y
+python -m pip uninstall networkx -y
+python -m pip uninstall numpy -y
+python -m pip uninstall pandas -y
+python -m pip uninstall Pillow -y
+python -m pip uninstall pycparser -y
+python -m pip uninstall pygit -y
+python -m pip uninstall pyparsing -y
+python -m pip uninstall python-dateutil -y
+python -m pip uninstall pytz -y
+python -m pip uninstall PyWavelets -y
+python -m pip uninstall PyYAML -y
+python -m pip uninstall scikit-image -y
+python -m pip uninstall scikit-learn -y
+python -m pip uninstall scipy -y
+python -m pip uninstall six -y
+python -m pip uninstall toolz -y
+python -m pip uninstall torch  -y
+python -m pip uninstall torchvision -y
+python -m pip uninstall tqdm -y
 
 echo.
 echo -------------------------------------------------

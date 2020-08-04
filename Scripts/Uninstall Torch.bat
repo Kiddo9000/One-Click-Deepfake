@@ -7,8 +7,8 @@ echo Removing Torch...
 echo -------------------------------------------------
 echo.
 
-python -m pip uninstall torch 
-python -m pip uninstall torchvision
+python -m pip uninstall torch -y
+python -m pip uninstall torchvision -y
 
 echo.
 echo -------------------------------------------------

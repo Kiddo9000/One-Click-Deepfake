@@ -32,7 +32,7 @@ matplotlib \
 moviepy \
 networkx==2.1 \
 numpy \
-pandas==0.23.4 \
+pandas \
 Pillow \
 pycparser==2.18 \
 pygit==0.1 \

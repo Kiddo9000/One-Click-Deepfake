@@ -37,10 +37,10 @@ while test $# -gt 0; do
             echo
             echo "$package [options]"
             echo " "
-            echo "options:"
-            echo "--help                show brief help"
-            echo "--install-cpu         install dependencies for CPU generation (slow, use CUDA if avaliable)"
-            echo "--install-cuda        install dependencies for CUDA generation (requires NVIDIA GPU)"
+            echo "Options:"
+            echo "--help                Shows brief help"
+            echo "--install-cpu         Install dependencies for CPU generation (Works on all systems, but is slower)"
+            echo "--install-cuda        Install dependencies for CUDA generation (Faster, but only works with NVIDIA GPU's)"
             exit 0
         ;;
         --install-cpu)

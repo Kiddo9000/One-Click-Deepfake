@@ -68,6 +68,8 @@ while test $# -gt 0; do
             printAscii
             echo "Downloading the latest version of the VOX model..."
             wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1UL1sNhtIk90DflYqdMqtuOB2bG63Z_N7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1UL1sNhtIk90DflYqdMqtuOB2bG63Z_N7" -O vox-adv-cpk.pth.tar && rm -rf /tmp/cookies.txt
+            cp vox-apt-cpk.pth.tar ../data
+            rm vox-apt-cpk.pth.tar
             echo -e "\033[0;32mDone. The VOX model has been downloaded.\033[0m"
             exit 0
         ;;

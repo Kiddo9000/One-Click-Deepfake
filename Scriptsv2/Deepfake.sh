@@ -41,6 +41,7 @@ while test $# -gt 0; do
             echo "--help                Shows brief help"
             echo "--install-cpu         Install dependencies for CPU generation (Works on all systems, but is slower)"
             echo "--install-cuda        Install dependencies for CUDA generation (Faster, but only works with NVIDIA GPU's)"
+            echo "--download-model      Downloads the latest version of the VOX model used for the deepfake."
             exit 0
         ;;
         --install-cpu)
@@ -61,6 +62,13 @@ while test $# -gt 0; do
             echo "Installing Torch..."
             sudo pip3 install torch torchvision
             echo -e "\033[0;32mDone. You are now ready to create deepfakes using NVIDIA CUDA.\033[0m"
+            exit 0
+        ;;
+        --download-model)
+            printAscii
+            echo "Downloading the latest version of the VOX model..."
+            wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1UL1sNhtIk90DflYqdMqtuOB2bG63Z_N7' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=1UL1sNhtIk90DflYqdMqtuOB2bG63Z_N7" -O vox-adv-cpk.pth.tar && rm -rf /tmp/cookies.txt
+            echo -e "\033[0;32mDone. The VOX model has been downloaded.\033[0m"
             exit 0
         ;;
     esac

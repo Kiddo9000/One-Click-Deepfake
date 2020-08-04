@@ -42,6 +42,34 @@ Using One Click Deepfake is very easy!
 This project would have not been possible without the awesome people who made the First Order Motion Model library possible! (And chose to make it open source, too!)  
 This project also relies on code from the awesome people who made the dependencies that this uses.  
 
-First Order Motion Model - Aliaksandr Siaorhin - https://github.com/AliaksandrSiarohin/first-order-model  
-CFFI - Armin Rigo, Maciej Fijalkowski - https://cffi.readthedocs.io/en/latest/  
-Cloudpickle - Cloudpipe - https://github.com/cloudpipe/cloudpickle  
+First Order Motion Model - Aliaksandr Siaorhin                - https://github.com/AliaksandrSiarohin/first-order-model  
+CFFI                     - Armin Rigo, Maciej Fijalkowski     - https://cffi.readthedocs.io/en/latest/  
+Cloudpickle              - Cloudpipe                          - https://github.com/cloudpipe/cloudpickle  
+Cycler                   - Thomas A Caswell                   - http://github.com/matplotlib/cycler  
+Dask                     - Matthew Rocklin                    - https://github.com/dask/dask/
+Decorator                - Michele Simionato                  - https://github.com/micheles/decorator
+Image                    - Francesc Ortiz                     - https://github.com/francescortiz/image
+ImageIO                  - ImageIO Contributors               - https://github.com/imageio/imageio
+ImageIO-FFMPEG           - ImageIO Contributors               - https://github.com/imageio/imageio-ffmpeg
+Kiwisolver               - The Nucleic Development Team       - https://github.com/nucleic/kiwi
+Matplotlib               - John D. Hunter, Michael Droettboom - https://matplotlib.org/
+Moviepy                  - Zulko 2017                         - https://zulko.github.io/moviepy/
+Networkx                 - Aric Hagberg                       - http://networkx.github.io/
+NumPy                    - NumPy Developers                   - https://www.numpy.org/
+Pandas                   - The PyData Development Team        - https://pandas.pydata.org/
+Pillow                   - Alex Clark                         - https://python-pillow.org/
+Pycparser                - Eli Bendersky                      - https://github.com/eliben/pycparser
+Pygit                    - Steve Fracinaux                    - http://code.istique.net/
+Pyparsing                - Paul McGuire                       - https://github.com/pyparsing/pyparsing/
+Python-Dateutil          - Gustavo Niemeyer                   - https://dateutil.readthedocs.io/
+Pytz                     - Stuart Bishop                      - http://pythonhosted.org/pytz
+PyWavelets               - 
+PyYAML                   - 
+Scikit-Image             - 
+Scikit-Learn             - 
+Scipy                    - 
+Six                      - 
+Toolz                    - 
+Torch                    - 
+Torchvision              - 
+TQDM                     - 

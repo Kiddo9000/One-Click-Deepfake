@@ -123,7 +123,7 @@ echo.
 echo -----------------------------------------
 echo.
 
-echo Installing Python 3...
+echo Preparing to install Python 3...
 
 Ping www.google.com -n 1 -w 1000>nul
 if errorlevel 1 (goto :PYTHONSKIP else (goto :PYTHONPROMPTINSTALL)
@@ -136,19 +136,19 @@ echo.
 goto :INSTALLALL2
 
 :PYTHONPROMPTINSTALL
-for /f "delims=" %%V in ('python -V') do @set ver=%%V
-echo.
-echo ==== WARNING ====
-echo It appears %ver% is already installed. Skipping...
-echo.
+echo Enter 1 and press enter to install Python 3. Python is required for deepfaking to work at all.
+echo Press any other key and hit enter to skip.
+set /p KRESP0=Choice: 
+if "%KRESP0%" == "1" goto :PYTHONINSTALL
 goto :INSTALLALL2
 
 :PYTHONINSTALL
-echo Enter 1 and press enter to install Python 3. It is required for deepfaking to work.
-echo Press any other key and hit enter to skip.
-set /p KRESP0=Choice: 
-if "%KRESP0%" == "1" goto :VSINSTALL
-goto :INSTALLALL2
+echo Installing Python 3...
+cd ..
+cd tools
+start /wait python-3.8.5-amd64-webinstall.exe /quiet InstallAllUsers=1 TargetDir="C:\Python38" AssociateFiles=1 PrependPath=1 Shortcuts=0 Include_doc=0 Include_exe=1 InstallLauncherAllUsers=1
+echo Python 3 has finished installing!
+cd %defdir%
 
 :INSTALLALL2
 echo.

@@ -19,7 +19,7 @@ pycparser
 pygit 
 pyparsing
 python-dateutil
-pytz==2018.5 
+pytz
 PyWavelets 
 PyYAML
 scikit-image 

@@ -93,6 +93,7 @@ while test $# -gt 0; do
         --create-cpu)
             printAscii
             echo "Creating deepfake in CPU mode..."
+            cd ..
             sudo python3 generate.py
             echo -e "\033[0;32mDone. The deepfake has been generated.\033[0m"
             exit 0
@@ -100,6 +101,7 @@ while test $# -gt 0; do
         --create-cuda)
             printAscii
             echo "Creating deepfake in CUDA mode..."
+            cd ..
             sudo python3 generate-cuda.py
             echo -e "\033[0;32mDone. The deepfake has been generated.\033[0m"
             exit 0

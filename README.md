@@ -10,8 +10,8 @@ This works for both Windows and Linux with about the same level of complexity.
 Using One Click Deepfake is very easy! The instructions below will guide you on how to use OCD for Windows. The Linux instructions are further down.
 
 ### 1. Download the source code. 
-   You can either use git or your browser.
-   `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`
+   You can either use git or your browser.  
+   `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`  
    If you download using your browser, remember to unzip it!
 
 ### 2. Install the deepfake tools.
@@ -29,8 +29,8 @@ Using One Click Deepfake is very easy! The instructions below will guide you on 
 This is the same as above but for the Linux version as it differs from the Windows version.
 
 ### 1. Download the soruce code.
-   You can either use git or your browser.
-   `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`
+   You can either use git or your browser.  
+   `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`  
    If you download using your browser, remember to unzip it!
 
 ### 2. Install the deepfake tools.
@@ -78,5 +78,5 @@ Torch - PyTorch Team - https://pytorch.org/
 Torchvision - PyTorch Core Team - https://github.com/pytorch/vision  
 TQDM - TQDM Developers - https://github.com/tqdm/tqdm  
   
-This project could have not been possible without Python as well! https://python.org/
+This project could have not been possible without Python as well! https://python.org/  
 And the Windows version could have not been possible without the Microsoft C++ Build Tools! https://visualstudio.microsoft.com/

@@ -126,13 +126,16 @@ echo.
 echo Installing Python 3...
 
 Ping www.google.com -n 1 -w 1000>nul
-if errorlevel 1 (goto :PYTHONSKIPONL) else (goto :CHECKPYTHON)
-
-:CHECKPYTHON
-python -V | find /v "Python" >NUL 2>NUL && (goto :PYTHONINSTALL)
-python -V | find "Python"    >NUL 2>NUL && (goto :PYTHONSKIP)
+if errorlevel 1 (goto :PYTHONSKIP else (goto :PYTHONPROMPTINSTALL)
 
 :PYTHONSKIP
+echo.
+echo ==== WARNING ====
+echo It appears that you are offline right now. Python 3 setup requires an internet connection to install correctly. Skipping...
+echo.
+goto :INSTALLALL2
+
+:PYTHONPROMPTINSTALL
 for /f "delims=" %%V in ('python -V') do @set ver=%%V
 echo.
 echo ==== WARNING ====
@@ -140,20 +143,12 @@ echo It appears %ver% is already installed. Skipping...
 echo.
 goto :INSTALLALL2
 
-:PYTHONSKIPONL
-echo.
-echo ==== WARNING ====
-echo It appears that you are offline right now. Python 3 setup requires an internet connection to install correctly. Skipping...
-echo.
-goto :INSTALLALL2
-
 :PYTHONINSTALL
-echo Python 3 was not found. Installing...
-cd ..
-cd tools
-start /wait python-3.8.5-amd64-webinstall.exe /quiet InstallAllUsers=1 TargetDir="C:\Python38" AssociateFiles=1 PrependPath=1 Shortcuts=0 Include_doc=0 Include_exe=1 InstallLauncherAllUsers=1
-echo Python 3 has finished installing!
-cd %defdir%
+echo Enter 1 and press enter to install Python 3. It is required for deepfaking to work.
+echo Press any other key and hit enter to skip.
+set /p KRESP0=Choice: 
+if "%KRESP0%" == "1" goto :VSINSTALL
+goto :INSTALLALL2
 
 :INSTALLALL2
 echo.
@@ -174,8 +169,8 @@ goto :INSTALLALL3
 :VSPROMPTINSTALL
 echo Enter 1 and press enter to install Visual Studio C++ Build Tools. It is highly recommended to install it if you do not already have it installed.
 echo Press any other key and hit enter to skip.
-set /p KRESP=Choice: 
-if "%KRESP%" == "1" goto :VSINSTALL
+set /p KRESP1=Choice: 
+if "%KRESP1%" == "1" goto :VSINSTALL
 goto :INSTALLALL3
 
 :VSINSTALL

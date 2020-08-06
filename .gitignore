@@ -5,3 +5,7 @@ Deepfake Content/result.mp4
 __pycache__
 modules/__pycache__
 sync_batchnorm/__pycache__
+vs-code-workspace.code-workspace
+tools/.wget-hsts
+tools/vox-adv-cpk.pth.tar
+data/vox-adv-cpk.pth.tar

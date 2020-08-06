@@ -1,0 +1,22 @@
+General Help:
+
+    Some dependencies failed to install due to C++ build tool errors
+        Some of the dependencies need the Microsoft C++ Build Tools 14.0 or better
+        to be installed so they can compile critcal tools. Run the Install Everything
+        option and make sure to install the C++ Build Tools when prompted. Note:
+        You may need to restart your PC for the changes to take effect.
+
+    What mode do I use? CPU or CUDA?
+        This depends on your system's hardware. Mainly your GPU. If you have a NVIDIA
+        GPU with CUDA avaliable on it, then you can use the CUDA acceleration to process
+        your Deepfake faster. If you do not have a CUDA capible GPU or non-NVIDIA GPU,
+        then you have to use the CPU mode.
+
+    Error: No NVIDIA GPU detected in your system.
+        This error may pop up from using the wrong mode. If you do not have an NVIDIA GPU
+        in your PC, then you cannot use CUDA. If you do have one, then it might not be
+        CUDA capible. Check online to make sure your specific GPU is CUDA ready.
+
+    I want to use CPU mode instead of CUDA or other way round.
+        You will need to uninstall Torch first. This can be done through the menu. Once you
+        have done that, you can reinstall using the mode you would like to use.

@@ -47,7 +47,7 @@ print("Creating the model and checkpoints")
 
 #Create Model
 from democuda import load_checkpoints
-generator, kp_detector = load_checkpoints(config_path='config/vox-adv-256.yaml', 
+generator, kp_detector = load_checkpoints(config_path='config/vox-adv-256.yaml',
                             checkpoint_path='data/vox-cpk.pth.tar')
 
 print("Animating image...")

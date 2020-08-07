@@ -1,8 +1,6 @@
 import os
 import sys
 import imageio
-import PIL
-from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation

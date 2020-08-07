@@ -1,0 +1,11 @@
+Install Requirements:
+
+    Both of these programs are automatically installed when you use the Install Everything option.
+
+    1. Python 3
+        This was tested with Python 3.8.3 and 3.8.5 but it should work with pretty
+        much any version of Python 3.
+
+    2. Visual Studio C++ Build Tools 14.0 or better
+        You can download the setup program for this on Microsoft's website. A guide
+        on how to set this up is avaliable in the README.md file.

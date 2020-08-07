@@ -4,40 +4,44 @@ The easy way to create a quick deepfake.
 The main goal of this is to make using the First Order Motion Model to create a basic deepfake much easier.
 Pretty much everything is written in Python and can be easily modified if you wish.
 
-## How to use
-Using One Click Deepfake is very easy!
+This works for both Windows and Linux with about the same level of complexity.
 
-1. Download the source code either via Git or through your browser.  
-`git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`
+## How to use (Windows)  
+Using One Click Deepfake is very easy! The instructions below will guide you on how to use OCD for Windows. The Linux instructions are further down.
 
-2. Extract everything to a folder somewhere.  
-   (This only applies if you downloaded through the website, not through git or git equivalent.)  
-   It really doesn't really matter where. However, you may see a performance increase by using it on an SSD instead of a mechanical drive.
+### 1. Download the source code. 
+   You can either use git or your browser.  
+   `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`  
+   If you download using your browser, remember to unzip it!
 
-3. Download and install python.  
-   (Windows only, skip this if you are using linux as the linux setups will do this automatically if python3 is not installed.)  
-   You can download Python 3 on their website, here: https://www.python.org/downloads/  
-   Download the latest version for windows and install it using the default settings.  
-   (You may need to restart for it to work correctly. If you have any issues running the scripts, then try restarting your pc.)
+### 2. Install the deepfake tools.
+   Run the "Deepfake.bat" file located in the "Scripts" folder. You will be presented with a menu with several options.
+   For most people, the "Install Everything" option will work just fine. This will install Python 3 (if it is not detected), Visual Studio C++ Build Tools (Required for some of the Python dependencies), all the dependencies, and download the deepfake model.
+   If you want to install Python and the C++ Build Tools manually, then you can run the setup programs located in the "tools" folder.
 
-4. Go into the 'Scripts' folder and run the correct setup script.  
-   If you are on windows, then run the .bat files.  
-   If you are on linux, then run the .sh files.  
-      
-   At the end of each script file's name, it will say either CUDA or CPU. Make sure to run the setup correct for your system. If you do not have a Nvidia GPU, then you need to use the CPU installer. If you do have a Nvidia GPU, then you can use either, but CUDA is highly recommended when avaliable.  
-      
-   If you run the wrong installer or want to use the other mode later on down the line, then do not worry! Simply run the "Uninstall Torch" script for your system (win/linux) as Torch is the only thing that is hardware specific. After that you can run the setup for the hardware mode you wish to use.  
-      
-   If you want to completly remove any installed dependencies, then run the "Uninstall All Dependencies" script instead. It is worth noting that the linux setup will install python3 if it is not yet installed, however, it will not remove it if you run the uninstaller.
-   
-5. Prepare the deepfake's files.  
-   (If you ever forget what to do with the files, these instructions are also included in the README.txt file in the "Deepfake Content" folder.)  
-   Navigate into the folder called "Deepfake Content". In here is where you store your original image, video and the output.
-   Move the image and the video you want to use into here. The image must be a png file and it needs to be named "original-image.png". Same goes with the video. It must be a mp4 file called "original-video.mp4".
-   
-6. Generate the deepfake.
-   At this point if you have done everything correctly, you are ready to generate your deepfake! Go into the "Scripts" folder once more and this time, run the "Create Deepfake (CUDA/CPU)". Again, make sure you are using the one for your OS (.bat for windows, .sh for linux) and that you are using the correct one for your hardware and the one you used when running the setup script earlier. The entire process is automated. The program will tell you when it's done generating the deepfake. You can find the finished video in the "Deepfake Content" folder as "result.mp4"  
-   
+### 3. Prepare the deepfake files.  
+   Copy your video and image to the "Deepfake Content" folder. The video MUST be a mp4 file and the image MUST be a png file. Name the image "original-image.png" and the video "original-video.mp4".  
+
+### 4. Create the deepfake.  
+   Run the "Deepfake.bat" file once more. This time, run either option 3 (Create deepfake using CPU) or option 4 (Create deepfake using CUDA) depending on your hardware and the install option you used. The process of creating the deepfake is automated, just like the setup. Once complete, the resulting video will be placed in "Deepfake Content" as "result.mp4".
+
+## How to use (Linux)
+This is the same as above but for the Linux version as it differs from the Windows version.
+
+### 1. Download the soruce code.
+   You can either use git or your browser.  
+   `git clone https://github.com/Kiddo9000/One-Click-Deepfake.git`  
+   If you download using your browser, remember to unzip it!
+
+### 2. Install the deepfake tools.
+   Open a terminal window in the "Scripts" folder. If you have an NVIDIA GPU then you can use the CUDA mode. Otherwise, you will have to use CPU mode. To install, run "./Deepfake.sh --install-cpu" for CPU. "./Deepfake.sh --install-cuda" for CUDA.
+
+### 3. Prepare the deepfake files.
+   Copy your video and image to the "Deepfake Content" folder. The video MUST be a mp4 file and the image MUST be a png file. Name the image "original-image.png" and the video "original-video.mp4".  
+
+### 4. Create the deepfake.
+   Run "./Deepfake.sh --create-cpu" to create a deepfake using CPU mode. "./Deepfake.sh --create-cuda" will use CUDA if avaliable. The process of creating the deepfake is automated, just like the setup. Once complete, the resulting video will be placed in "Deepfake Content" as "result.mp4".
+
 ## Third Party Code/Credits
 This project would have not been possible without the awesome people who made the First Order Motion Model library possible! (And chose to make it open source, too!)  
 This project also relies on code from the awesome people who made the dependencies that this uses.  
@@ -73,3 +77,6 @@ Toolz - Matthew Rocklin - https://github.com/pytoolz/toolz/
 Torch - PyTorch Team - https://pytorch.org/  
 Torchvision - PyTorch Core Team - https://github.com/pytorch/vision  
 TQDM - TQDM Developers - https://github.com/tqdm/tqdm  
+  
+This project could have not been possible without Python as well! https://python.org/  
+And the Windows version could have not been possible without the Microsoft C++ Build Tools! https://visualstudio.microsoft.com/

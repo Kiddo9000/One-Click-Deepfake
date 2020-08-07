@@ -1,4 +1,7 @@
 # One Click Deepfake
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/071fafb030494e609b2e9e849f9c34d6)](https://app.codacy.com/manual/Kiddo9000/One-Click-Deepfake?utm_source=github.com&utm_medium=referral&utm_content=Kiddo9000/One-Click-Deepfake&utm_campaign=Badge_Grade_Dashboard)
+
 The easy way to create a quick deepfake.
 
 The main goal of this is to make using the First Order Motion Model to create a basic deepfake much easier.
